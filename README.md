@@ -52,9 +52,9 @@ api-peliculas/
 ### Pruebas en Postman
 Aqui se muestra el correcto funcionamiento de los endpoints realizando peticiones GET y POST al servidor local:
 
-![Prueba Postman](./img/EVIDENCIA-POSTMAN.png)
+![Prueba Postman](./img/EVIDENCIA-POSTMAN.PNG)
 
 ### Base de Datos en MongoDB
 Los datos se almacenan y persisten correctamente en las colecciones de MongoDB Compass:
 
-![Evidencia MongoDB](./img/EVIDENCIA-MONGODB.png)
+![Evidencia MongoDB](./img/EVIDENCIA-MONGODB.PNG)
