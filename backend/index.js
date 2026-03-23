@@ -4,7 +4,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 getConnection(); 
 
@@ -19,5 +19,5 @@ app.use('/tipo', require('./routes/tipo'));
 app.use('/media', require('./routes/media'));
 
 app.listen(port, () => {
-    console.log(` Servidor en puerto ${port}`);
+    console.log(`🚀 Servidor en puerto ${port}`);
 });

@@ -1,60 +1,28 @@
-# API REST - Sistema de Gestion de Media (IUDigital)
+# 🎬 Proyecto de Gestión de Medios Audiovisuales - IUD
 
-Este proyecto es una API REST desarrollada para la gestion de contenidos multimedia (peliculas y series). Permite administrar directores, generos, productoras, tipos de contenido y la informacion principal de cada obra.
+Este proyecto es una aplicación **Full Stack** desarrollada con el **Stack MERN** (MongoDB, Express, React, Node.js) para la administración de un catálogo de películas y series. Permite gestionar maestros de información y visualizar el contenido en una interfaz moderna y responsiva.
 
-Desarrollador: Jhon Rivera
-Institucion: Institucion Universitaria Digital de Antioquia (IUDigital)
+## 🚀 Características
+* **Arquitectura Desacoplada:** Backend (API REST) y Frontend (React SPA) independientes.
+* **Módulos Maestros:** Gestión completa de Géneros, Directores, Productoras y Tipos de Contenido.
+* **Operaciones CRUD:** Creación y visualización de medios con persistencia en base de datos NoSQL.
+* **Interfaz Dark Mode:** Diseño personalizado en color negro azulado con componentes de Bootstrap.
 
-## Tecnologias Utilizadas
-* Node.js: Entorno de ejecucion para JavaScript.
-* Express: Framework para la creacion del servidor y las rutas.
-* MongoDB: Base de datos NoSQL para el almacenamiento de datos.
-* Mongoose: Modelado de objetos para MongoDB.
-* Postman: Herramienta para el testing de la API.
+## 🛠️ Tecnologías Utilizadas
 
-## Estructura del Proyecto
-La arquitectura del proyecto se divide de la siguiente manera:
+### Backend
+* **Node.js & Express:** Servidor y manejo de rutas de la API.
+* **MongoDB & Mongoose:** Base de datos NoSQL y modelado de datos.
+* **Cors:** Habilitación de intercambio de recursos entre origen cruzado.
 
-api-peliculas/
-├── db/
-│   └── db-connection-mongodb.js  # Configuracion de la conexion a la base de datos
-├── img/                          # Carpeta de evidencias visuales
-│   ├── EVIDENCIA-POSTMAN.png
-│   └── EVIDENCIA-MONGODB.png
-├── models/                       # Definicion de esquemas de Mongoose
-│   ├── Director.js
-│   ├── Genero.js
-│   ├── Media.js
-│   ├── Productora.js
-│   └── Tipo.js
-├── routes/                       # Endpoints de la API (GET, POST, PUT)
-│   ├── director.js
-│   ├── genero.js
-│   ├── media.js
-│   ├── productora.js
-│   └── tipo.js
-├── .env                          # Variables de entorno
-├── .gitignore                    # Archivos ignorados por Git
-├── index.js                      # Punto de entrada de la aplicacion
-└── package.json                  # Dependencias del proyecto
+### Frontend
+* **React JS:** Biblioteca principal para la interfaz de usuario.
+* **Axios:** Cliente HTTP para el consumo de la API REST.
+* **SweetAlert2:** Notificaciones interactivas para el usuario.
+* **Bootstrap:** Framework de estilos para un diseño responsivo.
 
-## Instalacion y Uso
+## 📦 Instalación y Configuración
 
-1. Clonar el repositorio.
-2. Instalar dependencias:
-   npm install
-3. Asegurarse de que el servicio de MongoDB este activo.
-4. Iniciar el servidor:
-   npm start
-
-## Evidencias de Funcionamiento
-
-### Pruebas en Postman
-Aqui se muestra el correcto funcionamiento de los endpoints realizando peticiones GET y POST al servidor local:
-
-![Prueba Postman](./img/EVIDENCIA-POSTMAN.PNG)
-
-### Base de Datos en MongoDB
-Los datos se almacenan y persisten correctamente en las colecciones de MongoDB Compass:
-
-![Evidencia MongoDB](./img/EVIDENCIA-MONGODB.PNG)
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)

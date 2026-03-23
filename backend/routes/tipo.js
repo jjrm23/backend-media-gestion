@@ -9,6 +9,7 @@ router.post('/', async (req, res) => {
         tipo = await tipo.save();
         res.status(201).send(tipo);
     } catch (error) {
+        
         res.status(400).send('Error al crear tipo');
     }
 });
@@ -22,5 +23,4 @@ router.get('/', async (req, res) => {
         res.status(500).send('Error al consultar');
     }
 });
-
-module.exports = router; 
+module.exports = router;
